@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./resources/bg\ ocean.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+}
+
+/* .wrapper {
+    background-image: url(./resources/bg\ ocean.jpg);
+    background-position: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+} */
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.grid {
+    background-color: hsla(200, 100%, 50%, 0.4);
+    display: grid;
+    margin: 2vmin;
+    width: 46vmin;
+    height: 46vmin;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.grid > div {
+    border: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+.ships {
+    display: flex;
+}
+
+.ships > div {
+    width: 4.6vmin;
+    height: 4.6vmin;
+}
+
+.ship {
+    display: flex;
+    width: calc(4.6vmin * var(--width, 1));
+    height: calc(4.6vmin * var(--height, 1));
+    margin: 1vmin;
+}
+
+.ship > div {
+    width: 4.6vmin;
+    height: 4.6vmin;
+}
+
+
+.carrier {
+    background-color: grey;
+    --width: 5;
+}
+
+.carrier-vertical {
+    --width: 1;
+    --height: 5;
+}
+
+
+.battleship {
+    background-color: yellow;
+    --width: 4;
+}
+
+.battleship-vertical {
+    --width: 1;
+    --height: 4;
+}
+
+.submarine {
+    background-color: blue;
+    --width: 3;}
+
+.destroyer {
+    background-color: green;
+    --width: 3;}
+
+.submarine-container-vertical,
+.destroyer-container-vertical {
+    --width: 1;
+    --height: 3;
+    }
+
+.patrol-boat {
+    background-color: blueviolet;
+    --width: 2;
+}
+.patrol-boat-vertical {
+    --width: 1;
+    --height: 2;
+}
+
+
+/* button {
+    height: 2rem;
+    text-align: center;
+    
+} */
